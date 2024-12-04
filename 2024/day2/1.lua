@@ -1,4 +1,4 @@
-function readFile(filename)
+local function readFile(filename)
     local data = {}
     for line in io.lines(filename) do
         local report = {}
@@ -10,7 +10,7 @@ function readFile(filename)
     return data
 end 
 
-function getSafe()
+local function getSafe()
     local safe_count = 0
     for i, j in pairs(readFile("input.txt")) do
         local safe = true

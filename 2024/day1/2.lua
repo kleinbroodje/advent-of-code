@@ -1,4 +1,4 @@
-function readFile(filename)
+local function readFile(filename)
     local nums1 = {}
     local nums2 = {}
 
@@ -22,7 +22,7 @@ function readFile(filename)
     return data
 end
 
-function calculateSimilarity()
+local function calculateSimilarity()
     local data = readFile("input.txt")
     local sum = 0
     for a, i in pairs(data[1]) do

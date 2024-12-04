@@ -1,4 +1,4 @@
-function readFile(filename)
+local function readFile(filename)
     local nums1 = {}
     local nums2 = {}
 
@@ -22,7 +22,7 @@ function readFile(filename)
     return data
 end
 
-function calculateDistance()
+local function calculateDistance()
     local data = readFile("input.txt")
     local sum = 0
     for i= 1, #data[1] do
