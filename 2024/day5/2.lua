@@ -30,8 +30,8 @@ local function correctUpdates()
         local allNumsCorrect = false
         local alreadyCorrect = true
         local updateCopy = {}
-        for k, v in pairs(update) do
-            table.insert(updateCopy, v)
+        for x, y in pairs(update) do
+            table.insert(updateCopy, y)
         end
         while not allNumsCorrect do
             for k, rule in pairs(rules) do
@@ -51,7 +51,7 @@ local function correctUpdates()
                             updateCopy[index1] = num2
                             updateCopy[index2] = num1
                             alreadyCorrect = false
-                            break
+                            break 
                         end
                     end
                 end
